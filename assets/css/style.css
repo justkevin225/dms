@@ -1,6 +1,11 @@
-* {
-  font-family: "Montserrat";
+@font-face {
+  font-family: "Montserrat Kev";
+  src: url("../fonts/Montserrat.ttf") format("truetype");
 }
+* {
+  font-family: "Montserrat Kev";
+}
+
 body,
 main {
   overflow-x: hidden;
@@ -48,6 +53,19 @@ main {
     transform: scaleX(1);
   }
 }
+.sections section#accueil {
+  position: relative;
+}
+.sections section#accueil::after {
+  content: "";
+  position: absolute;
+  height: 20%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  background: linear-gradient(to top, #fff, transparent);
+}
 
 .sections section#accueil .welcome-text {
   position: absolute;
@@ -61,6 +79,7 @@ main {
   padding: 12px;
   background-color: white;
   box-shadow: 0 0 30px 40px white;
+  z-index: 10;
 }
 
 .sections section#accueil .welcome-text .text-1 {
@@ -74,8 +93,9 @@ main {
 }
 
 .sections section#accueil img {
-  max-width: 120% !important;
-  transform-origin: right top;
+  z-index: 9;
+  max-width: 150% !important;
+  transform: translateX(-20%) !important;
 }
 
 @media screen and (min-width: 600px) {
