@@ -5,6 +5,9 @@
 * {
   font-family: "Montserrat Kev";
 }
+html, body {
+  scroll-behavior: smooth;
+}
 
 body,
 main {
@@ -22,6 +25,7 @@ main {
   font-weight: bold;
 }
 .navbar .navbar-nav > li > a {
+  font-size: 13px;
   position: relative;
   font-weight: 600;
 }
@@ -92,6 +96,10 @@ main {
   text-align: center;
 }
 
+.sections section#accueil .welcome-text .btn {
+  font-size: 11px;
+}
+
 .sections section#accueil img {
   z-index: 9;
   max-width: 150% !important;
@@ -105,6 +113,9 @@ main {
   .navbar-brand img {
     width: 40px;
     height: 40px;
+  }
+  .navbar .navbar-nav > li > a {
+    font-size: 15px;
   }
   .navbar .navbar-nav > li > a.isActive::after {
     left: 9px;
