@@ -1,6 +1,10 @@
 * {
   font-family: "Montserrat";
 }
+body,
+main {
+  overflow-x: hidden;
+}
 .navbar {
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
 }
@@ -12,7 +16,6 @@
   font-size: 12px;
   font-weight: bold;
 }
-
 .navbar .navbar-nav > li > a {
   position: relative;
   font-weight: 600;
@@ -21,7 +24,6 @@
   color: #2127c8 !important;
   transition: color 300ms ease-in-out;
 }
-
 .navbar .navbar-nav > li > a.isActive {
   position: relative;
   color: #2127c8 !important;
@@ -34,28 +36,47 @@
   width: 45px;
   height: 2px;
   background-color: #2127c8;
-  animation: navbarItemAnimate 300ms forwards ease-in-out ;
+  animation: navbarItemAnimate 300ms forwards ease-in-out;
   transform-origin: left;
 }
 
 @keyframes navbarItemAnimate {
-    from {
-      transform: scaleX(0);
-    }
-    to {
-      transform: scaleX(1);
-    }
+  from {
+    transform: scaleX(0);
   }
+  to {
+    transform: scaleX(1);
+  }
+}
 
-  .sections section#accueil {
-    position: relative;
-  }
-  .sections section#accueil img{
-    width: 60%;
-    position: absolute;
-    right: 0;
-  }
-    
+.sections section#accueil .welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
+  background-color: white;
+  box-shadow: 0 0 30px 40px white;
+}
+
+.sections section#accueil .welcome-text .text-1 {
+  font-weight: 800;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.sections section#accueil .welcome-text .text-2 {
+  text-align: center;
+}
+
+.sections section#accueil img {
+  max-width: 120% !important;
+  transform-origin: right top;
+}
 
 @media screen and (min-width: 600px) {
   .navbar-brand span {
