@@ -5,7 +5,8 @@
 * {
   font-family: "Montserrat Kev";
 }
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -81,6 +82,7 @@ main {
   justify-content: center;
   flex-direction: column;
   padding: 12px;
+  width: 200px;
   background-color: white;
   box-shadow: 0 0 30px 40px white;
   z-index: 10;
@@ -88,12 +90,15 @@ main {
 
 .sections section#accueil .welcome-text .text-1 {
   font-weight: 800;
+  font-size: 18px;
   text-transform: capitalize;
   text-align: center;
 }
 
 .sections section#accueil .welcome-text .text-2 {
   text-align: center;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .sections section#accueil .welcome-text .btn {
@@ -102,8 +107,74 @@ main {
 
 .sections section#accueil img {
   z-index: 9;
-  max-width: 150% !important;
+  width: 150% !important;
   transform: translateX(-20%) !important;
+}
+
+.sections h1.titres {
+  position: relative;
+  text-align: center;
+  font-size: 17.5px;
+  font-weight: bold;
+  color: #2127c8;
+  text-transform: uppercase;
+  margin-top: 45px;
+  padding-bottom: 5px;
+}
+
+.sections h1.titres::after {
+  content: "";
+  position: absolute;
+  height: 3.5px;
+  width: 350px;
+  left: 50%;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 30%,
+    #2127c8 50%,
+    #ffffff 70%,
+    #ffffff 100%
+  );
+  background-color: #f0f0f0;
+  transform: translateX(-50%);
+}
+
+.sections h2.sous-titres {
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  color: #212529;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.sections h2.sous-titres::after {
+  content: "";
+  position: absolute;
+  height: 3.5px;
+  width: 250px;
+  left: 50%;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 30%,
+    #212529 50%,
+    #ffffff 70%,
+    #ffffff 100%
+  );
+  background-color: #f0f0f0;
+  transform: translateX(-50%);
+}
+
+.sections p.lead {
+  font-size: 13px;
+  text-align: justify;
+  margin: 10px 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -119,5 +190,34 @@ main {
   }
   .navbar .navbar-nav > li > a.isActive::after {
     left: 9px;
+  }
+  .sections h1.titres {
+    font-size: 20px;
+  }
+  .sections h1.sous-titres {
+    font-size: 17px;
+  }
+  .sections p.lead {
+    font-size: 13.8px;
+  }
+
+  .sections section#accueil .welcome-text {
+    position: static;
+    margin-top: 72px;
+    background: none;
+    box-shadow: none;
+    transform: none;
+  }
+  .sections section#accueil img {
+    position: static;
+    right: 0;
+    width: 100% !important;
+    transform: translateX(5%) !important;
+  }
+  .sections section#accueil .welcome-text .text-1 {
+    font-size: 25px;
+  }
+  .sections section#accueil .welcome-text .text-2 {
+    font-size: 15px;
   }
 }
