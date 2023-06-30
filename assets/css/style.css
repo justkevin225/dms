@@ -15,11 +15,6 @@ main {
   overflow-x: hidden;
 }
 
-.btn {
-  transform: scale(1.05);
-  padding: 5px 25px;
-}
-
 .navbar {
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
 }
@@ -84,7 +79,6 @@ main {
   position: relative;
 }
 
-
 .sections section#accueil::after {
   content: "";
   position: absolute;
@@ -135,6 +129,9 @@ main {
   background-color: #f0f0f0;
   border-radius: 50px 50px 0 0;
 }
+.sections section#contact {
+  background-color: #f0f0f0;
+}
 
 .sections h1.titres {
   position: relative;
@@ -169,30 +166,13 @@ main {
   position: relative;
   text-align: center;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic;
-  color: #212529;
+  color: #2127c8;
   margin: 0px;
   padding-bottom: 5px;
 }
 
-.sections h2.sous-titres::after {
-  content: "";
-  position: absolute;
-  height: 3.5px;
-  width: 250px;
-  left: 50%;
-  bottom: 0;
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    transparent 30%,
-    #212529 50%,
-    transparent 70%,
-    transparent 100%
-  );
-  transform: translateX(-50%);
-}
 
 .sections p.lead {
   font-size: 14px;
@@ -242,7 +222,6 @@ main {
   hyphens: auto;
 }
 
-
 .swiper-slide img {
   border-radius: 5px !important;
   display: block;
@@ -255,6 +234,10 @@ main {
 }
 
 @media screen and (min-width: 600px) {
+  .btn {
+    transform: scale(1.05);
+    padding: 5px 25px;
+  }
   .navbar-brand span {
     font-size: 15px;
   }
@@ -303,5 +286,4 @@ main {
   .sections section#accueil {
     padding-top: 0;
   }
-
 }
