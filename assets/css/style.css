@@ -360,6 +360,22 @@ label, input::placeholder, textarea::placeholder{
   height: 100%;
 }
 
+footer {
+  background-color: #f0f0f0;
+  padding: 0 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div {
+  font-size: 11px;
+  text-align: center;
+}
+footer div i {
+  color: #2127c8;
+}
+
 @media screen and (min-width: 600px) {
   .btn {
     transform: scale(1.05);

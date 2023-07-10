@@ -186,16 +186,20 @@ const email = document.getElementById("email");
 const message = document.getElementById("message");
 
 // Définition des expressions régulières
-const regexNom = /^[a-zA-Z\s]{3,15}$/;
+const regexNom = /^[a-zA-Z\s]{3,25}$/;
 const regexTelephone = /^[0-9\s]{8,}$/;
 const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const regexMessage = /^.{5,}$/;
 
+let nomValide = false;
+let telephoneValide = false;
+let emailValide = false;
+let messageValide = false;
 
 // Quand un champ perd le focus on verifie ses infos
 document.getElementById("nomPrenoms").addEventListener("blur", (e) => {
-  const NomValide = regexNom.test(e.target.value);
-  if (!NomValide) {
+  nomValide = regexNom.test(e.target.value);
+  if (!nomValide) {
     e.target.classList.remove("is-valid");
     e.target.classList.add("is-invalid");
   } else {
@@ -206,8 +210,8 @@ document.getElementById("nomPrenoms").addEventListener("blur", (e) => {
 
 // Telephone
 document.getElementById("telephone").addEventListener("blur", (e) => {
-  const TelephoneValide = regexTelephone.test(e.target.value);
-  if (!TelephoneValide) {
+  telephoneValide = regexTelephone.test(e.target.value);
+  if (!telephoneValide) {
     e.target.classList.remove("is-valid");
     e.target.classList.add("is-invalid");
   } else {
@@ -218,7 +222,7 @@ document.getElementById("telephone").addEventListener("blur", (e) => {
 
 // Email
 document.getElementById("email").addEventListener("blur", (e) => {
-  const emailValide = regexEmail.test(e.target.value);
+  emailValide = regexEmail.test(e.target.value);
   if (!emailValide) {
     e.target.classList.remove("is-valid");
     e.target.classList.add("is-invalid");
@@ -230,12 +234,70 @@ document.getElementById("email").addEventListener("blur", (e) => {
 
 // Message
 document.getElementById("message").addEventListener("blur", (e) => {
-  const messageValide = regexMessage.test(e.target.value);
+  messageValide = regexMessage.test(e.target.value);
   if (!messageValide) {
     e.target.classList.remove("is-valid");
     e.target.classList.add("is-invalid");
   } else {
     e.target.classList.remove("is-invalid");
     e.target.classList.add("is-valid");
+  }
+});
+
+formulaire.addEventListener("submit", (e) => {
+  var notyf = new Notyf();
+
+  if (
+    nomValide == true &&
+    telephoneValide == true &&
+    emailValide == true &&
+    messageValide == true
+  ) {
+    e.preventDefault();
+
+    let messageToSend = encodeURIComponent(`
+    Nom et prenoms : ${nom.value}
+    Numéro de téléphone : ${telephone.value}
+    Email: ${email.value}
+    Message : ${message.value}
+    `);
+    let url =
+      "https://api.callmebot.com/whatsapp.php?phone=+22565100029&text=" +
+      messageToSend +
+      "&apikey=9252314";
+
+    fetch(url)
+      .then((response) => {
+        if (response.ok) {
+          console.log("Message envoyé avec succès !");
+        } else {
+          console.error(
+            "Échec de l'envoi du message. Statut de la réponse :",
+            response.status
+          );
+        }
+      })
+      .catch((error) => {
+        console.error(
+          "Une erreur s'est produite lors de l'envoi du message :",
+          error
+        );
+      });
+    notyf.success("Message envoyé avec succès !");
+    // On reinitialise
+    setTimeout(() => {
+      // Parcourez tous les éléments du formulaire
+      Array.from(formulaire.elements).forEach((element) => {
+        // Vérifiez si l'élément est un champ d'entrée et réinitialise sa valeur
+        if (element.tagName === "INPUT" || element.tagName === "TEXTAREA") {
+          element.value = "";
+          element.classList.remove("is-valid");
+          element.classList.remove("is-invalid");
+        }
+      });
+    }, 2000);
+  } else {
+    e.preventDefault();
+    notyf.error("Remplissez tous les champs du formulaire s'il vous plaît !");
   }
 });
