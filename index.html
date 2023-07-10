@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./assets/img/dms-logo.ico" type="image/x-icon">
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -54,15 +53,17 @@
         </div>
     </nav>
     <!-- Navbar Fin -->
-
+    <a href="#accueil" id="scrollToTopBtn"><i class="fa-solid fa-circle-up"></i></a>
     <main class="sections">
         <section id="accueil" class="row mt-5 mt-md-1">
             <div class="welcome-text col-md-4">
-                <div class="text-1">INOVATION <br> FLEXIBILITE, <br> ET EXCELLENCE</div>
+                <div class="text-1 element"></div>
                 <div class="text-2">dans tous nos <span style="color: #2127c8;">Services</span></div>
-                <a class="btn btn-primary rounded-pill mt-2" href="#services" role="button"><i
+                <a class="btn btn-primary rounded-pill mt-2 btn-services" href="#services" role="button"><i
                         class="fa-solid fa-hand-holding-heart mx-1"></i>Nos services</a>
             </div>
+            <div id="particles-js"></div>
+
             <img src="./assets/img/dms-background.webp" class="col-md-8" alt="illustration MULTISERVICES">
         </section>
         <section id="apropos" class="mb-4">
@@ -71,38 +72,48 @@
                 <div class="text-bg-dark col-12 col-md-6 me-md-3 pt-3 px-3 pt-md-2 px-md-5 text-center overflow-hidden">
                     <div>
                         <h2 class="sous-titres">Qui sommes nous ?</h2>
-                        <p class="lead"> La Société DRONEK MULTI SERVICES (DMS) personne morale au capital social de
-                            3.000.000 FCFA, dont le Siège Social est Abidjan Cocody Boulevard Latrille, non loin du Palm
-                            Club - 15 BP 116 Abidjan 01 - Immatriculée au registre du commerce et du crédit mobilier
-                            (RCCM) Côte d'Ivoire, sous le numéro N° : CI-ABJ-03-2023-B12-01748. <br> <br>
-
-                            DMS est Fondée en 2023 par Madame GUIGUI SAHOUA SONIA-CHRISTELLE Epse KOUACOU, ingénieure en
-                            mine, diplômée de l’Institut National Polytechnique (INP-HB) de Yamoussoukro ; qui en est la
-                            Gérante.</p>
+                        <p class="lead"> DRONEK MULTI SERVICES (DMS) est une entreprise à responsabilité limitée basée à
+                            Abidjan Cocody Boulevard Latrille, près du Palm Club. Enregistrée au registre du commerce et
+                            du crédit mobilier (RCCM) de la Côte d'Ivoire sous le numéro N° : CI-ABJ-03-2023-B12-01748,
+                            DMS dispose d'un capital social de 3.000.000 FCFA. <br><br>
+                            Nous offrons une gamme diversifiée d'activités pour répondre à vos besoins variés.
+                            Nos principales activités incluent les services de froid, l'électricité des bâtiments, la
+                            construction de bâtiments, l'entretien personnalisé, la réparation et l'entretien des
+                            appareils de froid, la conception de plans en 2D et 3D, la vente de matériaux de
+                            construction, d'électroménagers, de matériels informatiques et de fournitures de bureau,
+                            ainsi que le transport.
+                        </p>
                     </div>
                 </div>
                 <div class="text-bg-dark col-12 col-md-6 me-md-3  px-3 pt-md-2 px-md-5 text-center overflow-hidden">
                     <div>
                         <h2 class="sous-titres">Pourquoi nous choisir ?</h2>
-                        <p class="lead"> Nous sommes une entreprise spécialisée qui met l'accent sur l'expertise, la
-                            qualité, la fiabilité et le service client. Notre équipe hautement qualifiée et experte dans
-                            son domaine fournit des solutions adaptées aux besoins spécifiques de nos clients. Nous
-                            utilisons uniquement des matériaux de qualité pour garantir des projets finaux de haute
-                            qualité. Nous sommes fiables et respectons nos engagements envers nos clients. Notre service
-                            client est excellent, de la conception à la réalisation du projet.</p>
+                        <p class="lead"> Chez DMS, nous sommes fiers de notre engagement envers nos clients. Nous
+                            cherchons à fournir des solutions personnalisées qui répondent à vos besoins spécifiques.
+                            Notre équipe est disponible pour discuter de vos projets et vous conseiller sur les
+                            meilleures options disponibles.
+                            Nous sommes également engagés à fournir des produits de qualité supérieure, qu'il s'agisse
+                            de matériaux de construction, d'appareils électroménagers ou de fournitures de bureau. Nous
+                            nous assurons que nos produits sont fiables, durables et de la plus haute qualité.
+                            En tant qu'entreprise soucieuse de l'environnement, nous adoptons des pratiques durables
+                            dans toutes nos activités. Nous cherchons constamment à améliorer notre efficacité
+                            énergétique et à réduire notre empreinte carbone.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="services">
             <h1 class="titres">Nos services</h1>
-            <p class="lead text-center px-2">
-                En tant que jeune entreprise dynamique, DMS offre une gamme complète de services pour répondre à vos
-                exigences diverses
+            <p class="lead px-2 mb-5">
+                Nos principales activités incluent les services de froid, l'électricité des bâtiments, la construction
+                de bâtiments, l'entretien personnalisé, la réparation et l'entretien des appareils de froid, la
+                conception de plans en 2D et 3D, la vente de matériaux de construction, d'électroménagers, de matériels
+                informatiques et de fournitures de bureau, ainsi que le transport.
             </p>
             <!-- Slider main container -->
             <div class="swiper">
-                <!-- Additional required wrapper -->
+                <!-- wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
@@ -111,11 +122,8 @@
                             <span>froid et climatisation</span>
                         </div>
                         <div class="card-text">
-                            Nous comprenons l'importance d'un système de <span class="fw-bold">climatisation</span>
-                            fiable et performant pour votre
-                            entreprise. C'est pourquoi nous offrons un service complet d’installation, de maintenance et
-                            d'entretien des climatiseurs, conçu pour assurer un environnement intérieur confortable et
-                            optimal.
+                            <div>Prévention des pannes</div>
+                            <div>Intervention rapide et service réactif</div>
                         </div>
                         <img alt="Froid et climatisation" src="./assets/img/Froid et climatisation.jpg" />
                     </div>
@@ -126,8 +134,8 @@
                             <span>Conception de plans 2D et 3D</span>
                         </div>
                         <div class="card-text">
-                            DMS offre un service de conception de plans en 2D et 3D, conçu pour vous aider à visualiser
-                            et à planifier vos projets de manière efficace.
+                            <div>Planification de vos projets</div>
+                            <div>Conception de plans interieur et extérieur</div>
                         </div>
                         <img alt="Conception de plan 2D et 3D" src="./assets/img/Conception de plan 2D et 3D.jpg" />
                     </div>
@@ -138,10 +146,10 @@
                             <span>Electricité de bâtiments</span>
                         </div>
                         <div class="card-text">
-                            Le service d'électricité de bâtiment concerne l'installation, la maintenance et la
-                            réparation des systèmes électriques dans les bâtiments. Nous sommes chargés de concevoir et
-                            de mettre en place les installations électriques dans
-                            les bâtiments résidentiels, commerciaux ou industriels. </div>
+                            <div>Installation de systèmes électriques</div>
+                            <div>Distribution de matériel électrique</div>
+                            <div>Service de conseil technique</div>
+                        </div>
                         <img alt="Electricité de bâtiments" src="./assets/img/Electricité de bâtiments.jpg" />
                     </div>
 
@@ -151,13 +159,8 @@
                             <span>Vente de matériels informatique</span>
                         </div>
                         <div class="card-text">
-                            Nous proposons une vaste sélection de produits provenant de marques réputées dans le domaine
-                            de
-                            la technologie et des fournitures de bureau. Que vous ayez besoin d'ordinateurs de bureau,
-                            de
-                            portables, d'imprimantes, de scanners, de périphériques ou de fournitures de bureau
-                            essentielles,
-                            nous avons ce qu'il vous faut.
+                            <div>fournitures de bureau</div>
+                            <div>PC, imprimantes, scanners</div>
                         </div>
                         <img alt="Vente de matériels informatique"
                             src="./assets/img/Vente de matériels informatique.jpg" />
@@ -168,10 +171,9 @@
                             <span>Construction</span>
                         </div>
                         <div class="card-text">
-                            Nous comprenons l'importance d'un système de climatisation fiable et performant pour votre
-                            entreprise. C'est pourquoi nous offrons un service complet d’installation, de maintenance et
-                            d'entretien des climatiseurs, conçu pour assurer un environnement intérieur confortable et
-                            optimal.
+                            <div>Constructions de bâtiments</div>
+                            <div>Rénovations de bâtiments</div>
+                            <div>Aménagement intérieur et extérieur</div>
                         </div>
                         <img alt="Construction" src="./assets/img/Contrusction.jpeg" />
                     </div>
@@ -182,26 +184,29 @@
                             <span>Transport</span>
                         </div>
                         <div class="card-text">
-                            DMS dispose d'une importante flotte de véhicule (camion
-                            fourgon, camion KIA, 4×4 tout terrain…) qu'elle met à votre
-                            disposition pour diverses missions sur le territoire national.
-                            Dans le cadre des différentes missions de DMS, nous avons
-                            transporté 800.000 plants lors de la campagne 2021-2022
-                            pour la SACO et le CCC (partenaires privilégiés).
+                            <div>Importante flotte de véhicule</div>
+                            <div>Service de coursier</div>
                         </div>
                         <img alt="Construction" src="./assets/img/Transport.jpg" />
                     </div>
 
 
                 </div>
-                <!-- If we need pagination -->
+                <!-- pagination -->
                 <div class="swiper-pagination"></div>
+                <!-- next-prev btns -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
         <section id="contact" class="pb-5">
             <h1 class="titres">Contactez-nous</h1>
-            <div class="container">
-                <div class="sub-container row">
+            <p class="lead px-2 my-4">
+                Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment DRONEK
+                MULTI SERVICES (DMS) peut vous aider à atteindre vos objectifs.
+            </p>
+            <div class="container overflow-hidden">
+                <div class="sub-container row overflow-hidden">
                     <div id="coordonnees" class="col-12 col-md-6 col-lg-5">
                         <h2 class="sous-titres my-2">Coordonnées</h2>
                         <div class="text-justify">Contactez nous à l'aide des moyens ci-dessous :</div>
@@ -238,7 +243,7 @@
 
                     <div id="formulaire_contact" class="col-12 col-md-6 col-lg-7">
                         <h2 class="sous-titres my-2">Formulaire de contact</h2>
-                        <form class="needs-validation" novalidate>
+                        <form class="needs-validation" id="contact-form" novalidate>
                             <div class="form-row">
                                 <div class="col-md-6 mb-3">
                                     <label for="nomPrenoms">Nom et prenoms</label>
@@ -290,10 +295,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-primary" type="submit">
-                                <span>Envoyer</span>
-                                <i class="fa fa-send"></i>
-                            </button>
+                            <img src="./assets/img/send.png" alt="send img" class="send">
+                            <div class="btn-container text-center">
+                                <button class="btn btn-primary" type="submit" id="envoyer">
+                                    <span>Envoyer</span>
+                                    <i class="fa fa-send"></i>
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -301,8 +309,9 @@
         </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mohamedfrindi/TxtAnime.js/dist/TxtAnime.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
