@@ -1,3 +1,8 @@
+window.addEventListener('load', function() {
+  const loader = document.querySelector('.loader-container');
+  loader.style.display = 'none';
+});
+
 const navbar_items = document.querySelectorAll(".navbar-nav .nav-item a");
 
 navbar_items.forEach((navbar_item) => {

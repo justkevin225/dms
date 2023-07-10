@@ -15,305 +15,322 @@
 </head>
 
 <body>
+    <div class="loader-container bg-white d-flex align-items-center justify-content-center">
+        <span class="loader"></span>
+        <span>Un instant...</span>
+    </div>
 
-    <!-- Navbar début  -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
-        <div class="container">
-            <!-- Logo à gauche -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="./assets/img/dms - logo.png" alt="Logo">
-                <div class="d-flex flex-column ml-1 ml-md-2">
-                    <span>DRONEK</span>
-                    <span>MULTISERVICES</span>
-                </div>
-            </a>
-
-            <!-- Bouton pour la navigation mobile -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <!-- Navigation à droite -->
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link isActive" href="#accueil">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#apropos">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar Fin -->
-    <a href="#accueil" id="scrollToTopBtn"><i class="fa-solid fa-circle-up"></i></a>
-    <main class="sections">
-        <section id="accueil" class="row mt-5 mt-md-1">
-            <div class="welcome-text col-md-4">
-                <div class="text-1 element"></div>
-                <div class="text-2">dans tous nos <span style="color: #2127c8;">Services</span></div>
-                <a class="btn btn-primary rounded-pill mt-2 btn-services" href="#services" role="button"><i
-                        class="fa-solid fa-hand-holding-heart mx-1"></i>Nos services</a>
-            </div>
-            <div id="particles-js"></div>
-
-            <img src="./assets/img/dms-background.webp" class="col-md-8" alt="illustration MULTISERVICES">
-        </section>
-        <section id="apropos" class="mb-4">
-            <h1 class="titres">A propos de nous</h1>
-            <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-                <div class="text-bg-dark col-12 col-md-6 me-md-3 pt-3 px-3 pt-md-2 px-md-5 text-center overflow-hidden">
-                    <div>
-                        <h2 class="sous-titres">Qui sommes nous ?</h2>
-                        <p class="lead"> DRONEK MULTI SERVICES (DMS) est une entreprise à responsabilité limitée basée à
-                            Abidjan Cocody Boulevard Latrille, près du Palm Club. Enregistrée au registre du commerce et
-                            du crédit mobilier (RCCM) de la Côte d'Ivoire sous le numéro N° : CI-ABJ-03-2023-B12-01748,
-                            DMS dispose d'un capital social de 3.000.000 FCFA. <br><br>
-                            Nous offrons une gamme diversifiée d'activités pour répondre à vos besoins variés.
-                            Nos principales activités incluent les services de froid, l'électricité des bâtiments, la
-                            construction de bâtiments, l'entretien personnalisé, la réparation et l'entretien des
-                            appareils de froid, la conception de plans en 2D et 3D, la vente de matériaux de
-                            construction, d'électroménagers, de matériels informatiques et de fournitures de bureau,
-                            ainsi que le transport.
-                        </p>
+    <div class="global-container">
+        <!-- Navbar début  -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
+            <div class="container">
+                <!-- Logo à gauche -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/img/dms - logo.png" alt="Logo">
+                    <div class="d-flex flex-column ml-1 ml-md-2">
+                        <span>DRONEK</span>
+                        <span>MULTISERVICES</span>
                     </div>
-                </div>
-                <div class="text-bg-dark col-12 col-md-6 me-md-3  px-3 pt-md-2 px-md-5 text-center overflow-hidden">
-                    <div>
-                        <h2 class="sous-titres">Pourquoi nous choisir ?</h2>
-                        <p class="lead"> Chez DMS, nous sommes fiers de notre engagement envers nos clients. Nous
-                            cherchons à fournir des solutions personnalisées qui répondent à vos besoins spécifiques.
-                            Notre équipe est disponible pour discuter de vos projets et vous conseiller sur les
-                            meilleures options disponibles.
-                            Nous sommes également engagés à fournir des produits de qualité supérieure, qu'il s'agisse
-                            de matériaux de construction, d'appareils électroménagers ou de fournitures de bureau. Nous
-                            nous assurons que nos produits sont fiables, durables et de la plus haute qualité.
-                            En tant qu'entreprise soucieuse de l'environnement, nous adoptons des pratiques durables
-                            dans toutes nos activités. Nous cherchons constamment à améliorer notre efficacité
-                            énergétique et à réduire notre empreinte carbone.
-                        </p>
-                    </div>
+                </a>
+
+                <!-- Bouton pour la navigation mobile -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- Navigation à droite -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link isActive" href="#accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#apropos">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <section id="services">
-            <h1 class="titres">Nos services</h1>
-            <p class="lead px-2 mb-5">
-                Nos principales activités incluent les services de froid, l'électricité des bâtiments, la construction
-                de bâtiments, l'entretien personnalisé, la réparation et l'entretien des appareils de froid, la
-                conception de plans en 2D et 3D, la vente de matériaux de construction, d'électroménagers, de matériels
-                informatiques et de fournitures de bureau, ainsi que le transport.
-            </p>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="card-title d-flex justify-content-center">
-                            <i class="fa-solid fa-wind mx-2 mt-1"></i>
-                            <span>froid et climatisation</span>
-                        </div>
-                        <div class="card-text">
-                            <div>Prévention des pannes</div>
-                            <div>Intervention rapide et service réactif</div>
-                        </div>
-                        <img alt="Froid et climatisation" src="./assets/img/Froid et climatisation.jpg" />
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-title d-flex justify-content-center">
-                            <i class="fa-solid fa-ruler mx-2 mt-1"></i>
-                            <span>Conception de plans 2D et 3D</span>
-                        </div>
-                        <div class="card-text">
-                            <div>Planification de vos projets</div>
-                            <div>Conception de plans interieur et extérieur</div>
-                        </div>
-                        <img alt="Conception de plan 2D et 3D" src="./assets/img/Conception de plan 2D et 3D.jpg" />
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-title d-flex justify-content-center">
-                            <i class="fa-solid fa-screwdriver-wrench mx-2 mt-1"></i>
-                            <span>Electricité de bâtiments</span>
-                        </div>
-                        <div class="card-text">
-                            <div>Installation de systèmes électriques</div>
-                            <div>Distribution de matériel électrique</div>
-                            <div>Service de conseil technique</div>
-                        </div>
-                        <img alt="Electricité de bâtiments" src="./assets/img/Electricité de bâtiments.jpg" />
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-title d-flex justify-content-center">
-                            <i class="fa-brands fa-shopify mt-1 mx-2"></i>
-                            <span>Vente de matériels informatique</span>
-                        </div>
-                        <div class="card-text">
-                            <div>fournitures de bureau</div>
-                            <div>PC, imprimantes, scanners</div>
-                        </div>
-                        <img alt="Vente de matériels informatique"
-                            src="./assets/img/Vente de matériels informatique.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card-title d-flex justify-content-center">
-                            <i class="fa-solid fa-hammer mx-2 mt-1"></i>
-                            <span>Construction</span>
-                        </div>
-                        <div class="card-text">
-                            <div>Constructions de bâtiments</div>
-                            <div>Rénovations de bâtiments</div>
-                            <div>Aménagement intérieur et extérieur</div>
-                        </div>
-                        <img alt="Construction" src="./assets/img/Contrusction.jpeg" />
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-title d-flex justify-content-center">
-                            <i class="fa-solid fa-car mx-2 mt-1"></i>
-                            <span>Transport</span>
-                        </div>
-                        <div class="card-text">
-                            <div>Importante flotte de véhicule</div>
-                            <div>Service de coursier</div>
-                        </div>
-                        <img alt="Construction" src="./assets/img/Transport.jpg" />
-                    </div>
-
-
+        </nav>
+        <!-- Navbar Fin -->
+        <a href="#accueil" id="scrollToTopBtn"><i class="fa-solid fa-circle-up"></i></a>
+        <main class="sections">
+            <section id="accueil" class="row mt-5 mt-md-1">
+                <div class="welcome-text col-md-4">
+                    <div class="text-1 element"></div>
+                    <div class="text-2">dans tous nos <span style="color: #2127c8;">Services</span></div>
+                    <a class="btn btn-primary rounded-pill mt-2 btn-services" href="#services" role="button"><i
+                            class="fa-solid fa-hand-holding-heart mx-1"></i>Nos services</a>
                 </div>
-                <!-- pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- next-prev btns -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </section>
-        <section id="contact" class="pb-3">
-            <h1 class="titres">Contactez-nous</h1>
-            <p class="lead px-2 my-4">
-                Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment DRONEK
-                MULTI SERVICES (DMS) peut vous aider à atteindre vos objectifs.
-            </p>
-            <div class="container overflow-hidden">
-                <div class="sub-container row overflow-hidden">
-                    <div id="coordonnees" class="col-12 col-md-6 col-lg-5">
-                        <h2 class="sous-titres my-2">Coordonnées</h2>
-                        <div class="text-justify">Contactez nous à l'aide des moyens ci-dessous :</div>
-                        <div class="liste-donnees">
-                            <div class="donnee my-2">
-                                <i class="fa fa-phone mx-1"></i>
-                                <span>+225 27 21 51 41 49 / 07 49 67 40 67</span>
+                <div id="particles-js"></div>
+
+                <img src="./assets/img/dms-background.webp" class="col-md-8" alt="illustration MULTISERVICES">
+            </section>
+            <section id="apropos" class="mb-4">
+                <h1 class="titres">A propos de nous</h1>
+                <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+                    <div
+                        class="text-bg-dark col-12 col-md-6 me-md-3 pt-3 px-3 pt-md-2 px-md-5 text-center overflow-hidden">
+                        <div>
+                            <h2 class="sous-titres">Qui sommes nous ?</h2>
+                            <p class="lead"> DRONEK MULTI SERVICES (DMS) est une entreprise à responsabilité limitée
+                                basée à
+                                Abidjan Cocody Boulevard Latrille, près du Palm Club. Enregistrée au registre du
+                                commerce et
+                                du crédit mobilier (RCCM) de la Côte d'Ivoire sous le numéro N° :
+                                CI-ABJ-03-2023-B12-01748,
+                                DMS dispose d'un capital social de 3.000.000 FCFA. <br><br>
+                                Nous offrons une gamme diversifiée d'activités pour répondre à vos besoins variés.
+                                Nos principales activités incluent les services de froid, l'électricité des bâtiments,
+                                la
+                                construction de bâtiments, l'entretien personnalisé, la réparation et l'entretien des
+                                appareils de froid, la conception de plans en 2D et 3D, la vente de matériaux de
+                                construction, d'électroménagers, de matériels informatiques et de fournitures de bureau,
+                                ainsi que le transport.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-bg-dark col-12 col-md-6 me-md-3  px-3 pt-md-2 px-md-5 text-center overflow-hidden">
+                        <div>
+                            <h2 class="sous-titres">Pourquoi nous choisir ?</h2>
+                            <p class="lead"> Chez DMS, nous sommes fiers de notre engagement envers nos clients. Nous
+                                cherchons à fournir des solutions personnalisées qui répondent à vos besoins
+                                spécifiques.
+                                Notre équipe est disponible pour discuter de vos projets et vous conseiller sur les
+                                meilleures options disponibles.
+                                Nous sommes également engagés à fournir des produits de qualité supérieure, qu'il
+                                s'agisse
+                                de matériaux de construction, d'appareils électroménagers ou de fournitures de bureau.
+                                Nous
+                                nous assurons que nos produits sont fiables, durables et de la plus haute qualité.
+                                En tant qu'entreprise soucieuse de l'environnement, nous adoptons des pratiques durables
+                                dans toutes nos activités. Nous cherchons constamment à améliorer notre efficacité
+                                énergétique et à réduire notre empreinte carbone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="services">
+                <h1 class="titres">Nos services</h1>
+                <p class="lead px-2 mb-5">
+                    Nos principales activités incluent les services de froid, l'électricité des bâtiments, la
+                    construction
+                    de bâtiments, l'entretien personnalisé, la réparation et l'entretien des appareils de froid, la
+                    conception de plans en 2D et 3D, la vente de matériaux de construction, d'électroménagers, de
+                    matériels
+                    informatiques et de fournitures de bureau, ainsi que le transport.
+                </p>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="card-title d-flex justify-content-center">
+                                <i class="fa-solid fa-wind mx-2 mt-1"></i>
+                                <span>froid et climatisation</span>
                             </div>
-                            <div class="donnee my-2">
-                                <i class="bi bi-mailbox2 mx-2"></i>
-                                <span>info@dms.net / 15 BP 116 Abidjan 15 </span>
+                            <div class="card-text">
+                                <div>Prévention des pannes</div>
+                                <div>Intervention rapide et service réactif</div>
                             </div>
-                            <div class="donnee my-2">
-                                <i class="fa-solid fa-location-dot mx-2"></i>
-                                <span>Cocody 216 lgts apt 386, Face à l’entrée principale de l’hôtel palm club.</span>
-                            </div>
+                            <img alt="Froid et climatisation" src="./assets/img/Froid et climatisation.jpg" />
                         </div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1466.6412167233552!2d-4.003260070272593!3d5.353581911388005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sci!4v1688121275252!5m2!1sfr!2sci"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div class="social my-4">
-                            <a href="https://www.facebook.com/dronekMultiServices">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/dronek-multi-services">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                            <a href="wa.me/+2250749674067">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div id="formulaire_contact" class="col-12 col-md-6 col-lg-7">
-                        <h2 class="sous-titres my-2">Formulaire de contact</h2>
-                        <form class="needs-validation" id="contact-form" novalidate>
-                            <div class="form-row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="nomPrenoms">Nom et prenoms</label>
-                                    <input type="text" class="form-control" id="nomPrenoms" placeholder="Nom et prenoms"
-                                        required>
-                                    <div class="valid-feedback">
-                                        Ok !
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        Donnez des information correctes s'il vous plait...
-                                    </div>
+                        <div class="swiper-slide">
+                            <div class="card-title d-flex justify-content-center">
+                                <i class="fa-solid fa-ruler mx-2 mt-1"></i>
+                                <span>Conception de plans 2D et 3D</span>
+                            </div>
+                            <div class="card-text">
+                                <div>Planification de vos projets</div>
+                                <div>Conception de plans interieur et extérieur</div>
+                            </div>
+                            <img alt="Conception de plan 2D et 3D" src="./assets/img/Conception de plan 2D et 3D.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-title d-flex justify-content-center">
+                                <i class="fa-solid fa-screwdriver-wrench mx-2 mt-1"></i>
+                                <span>Electricité de bâtiments</span>
+                            </div>
+                            <div class="card-text">
+                                <div>Installation de systèmes électriques</div>
+                                <div>Distribution de matériel électrique</div>
+                                <div>Service de conseil technique</div>
+                            </div>
+                            <img alt="Electricité de bâtiments" src="./assets/img/Electricité de bâtiments.jpg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-title d-flex justify-content-center">
+                                <i class="fa-brands fa-shopify mt-1 mx-2"></i>
+                                <span>Vente de matériels informatique</span>
+                            </div>
+                            <div class="card-text">
+                                <div>fournitures de bureau</div>
+                                <div>PC, imprimantes, scanners</div>
+                            </div>
+                            <img alt="Vente de matériels informatique"
+                                src="./assets/img/Vente de matériels informatique.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-title d-flex justify-content-center">
+                                <i class="fa-solid fa-hammer mx-2 mt-1"></i>
+                                <span>Construction</span>
+                            </div>
+                            <div class="card-text">
+                                <div>Constructions de bâtiments</div>
+                                <div>Rénovations de bâtiments</div>
+                                <div>Aménagement intérieur et extérieur</div>
+                            </div>
+                            <img alt="Construction" src="./assets/img/Contrusction.jpeg" />
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-title d-flex justify-content-center">
+                                <i class="fa-solid fa-car mx-2 mt-1"></i>
+                                <span>Transport</span>
+                            </div>
+                            <div class="card-text">
+                                <div>Importante flotte de véhicule</div>
+                                <div>Service de coursier</div>
+                            </div>
+                            <img alt="Construction" src="./assets/img/Transport.jpg" />
+                        </div>
+
+
+                    </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- next-prev btns -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <section id="contact" class="pb-3">
+                <h1 class="titres">Contactez-nous</h1>
+                <p class="lead px-2 my-4">
+                    Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment DRONEK
+                    MULTI SERVICES (DMS) peut vous aider à atteindre vos objectifs.
+                </p>
+                <div class="container overflow-hidden">
+                    <div class="sub-container row overflow-hidden">
+                        <div id="coordonnees" class="col-12 col-md-6 col-lg-5">
+                            <h2 class="sous-titres my-2">Coordonnées</h2>
+                            <div class="text-justify">Contactez nous à l'aide des moyens ci-dessous :</div>
+                            <div class="liste-donnees">
+                                <div class="donnee my-2">
+                                    <i class="fa fa-phone mx-1"></i>
+                                    <span>+225 27 21 51 41 49 / 07 49 67 40 67</span>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="telephone">Téléphone</label>
-                                    <input type="text" class="form-control" id="telephone"
-                                        placeholder="Numéro de téléphone" required>
-                                    <div class="valid-feedback">
-                                        Ok !
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        Donnez des information correctes s'il vous plait...
-                                    </div>
+                                <div class="donnee my-2">
+                                    <i class="bi bi-mailbox2 mx-2"></i>
+                                    <span>info@dms.net / 15 BP 116 Abidjan 15 </span>
+                                </div>
+                                <div class="donnee my-2">
+                                    <i class="fa-solid fa-location-dot mx-2"></i>
+                                    <span>Cocody 216 lgts apt 386, Face à l’entrée principale de l’hôtel palm
+                                        club.</span>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="col-12 mb-3">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email"
-                                        placeholder="Votre adresse e-m@il" required>
-                                    <div class="valid-feedback">
-                                        Ok !
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1466.6412167233552!2d-4.003260070272593!3d5.353581911388005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sci!4v1688121275252!5m2!1sfr!2sci"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="social my-4">
+                                <a href="https://www.facebook.com/dronekMultiServices">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/dronek-multi-services">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="wa.me/+2250749674067">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="formulaire_contact" class="col-12 col-md-6 col-lg-7">
+                            <h2 class="sous-titres my-2">Formulaire de contact</h2>
+                            <form class="needs-validation" id="contact-form" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="nomPrenoms">Nom et prenoms</label>
+                                        <input type="text" class="form-control" id="nomPrenoms"
+                                            placeholder="Nom et prenoms" required>
+                                        <div class="valid-feedback">
+                                            Ok !
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Donnez des information correctes s'il vous plait...
+                                        </div>
                                     </div>
-                                    <div class="invalid-feedback">
-                                        Saisissez un mail valide s'il vous plait...
+                                    <div class="col-md-6 mb-3">
+                                        <label for="telephone">Téléphone</label>
+                                        <input type="text" class="form-control" id="telephone"
+                                            placeholder="Numéro de téléphone" required>
+                                        <div class="valid-feedback">
+                                            Ok !
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Donnez des information correctes s'il vous plait...
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="col-12 mb-3">
-                                    <label for="message">Message</label>
-                                    <textarea class="form-control" id="message"
-                                        placeholder="Parlez nous brièvement de votre préocupation..."
-                                        required></textarea>
-                                    <div class="valid-feedback">
-                                        Ok !
-                                    </div>
-                                    <div class="invalid-feedback">
-                                        Vous n'avez donc rien à dire !?
+                                <div class="form-row">
+                                    <div class="col-12 mb-3">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Votre adresse e-m@il" required>
+                                        <div class="valid-feedback">
+                                            Ok !
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Saisissez un mail valide s'il vous plait...
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <img src="./assets/img/send.png" alt="send img" class="send">
-                            <div class="btn-container text-center">
-                                <button class="btn btn-primary" type="submit" id="envoyer">
-                                    <span>Envoyer</span>
-                                    <i class="fa fa-send"></i>
-                                </button>
-                            </div>
-                        </form>
+                                <div class="form-row">
+                                    <div class="col-12 mb-3">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" id="message"
+                                            placeholder="Parlez nous brièvement de votre préocupation..."
+                                            required></textarea>
+                                        <div class="valid-feedback">
+                                            Ok !
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Vous n'avez donc rien à dire !?
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/send.png" alt="send img" class="send">
+                                <div class="btn-container text-center">
+                                    <button class="btn btn-primary" type="submit" id="envoyer">
+                                        <span>Envoyer</span>
+                                        <i class="fa fa-send"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <footer>
-            <div>Copyright © 2021 <b>DRONEK MULTI SERVICES</b>. Tous droits réservés.</div>
-            <div><i class="fa-solid fa-code"></i> with <i class="fa-solid fa-heart"></i> By <a
-                    href="https://justkevin225.github.io/portfolio" target="_blank">Kev</a></div>
-        </footer>
-    </main>
+            </section>
+            <footer>
+                <div>Copyright © 2021 <b>DRONEK MULTI SERVICES</b>. Tous droits réservés.</div>
+                <div><i class="fa-solid fa-code"></i> with <i class="fa-solid fa-heart"></i> By <a
+                        href="https://justkevin225.github.io/portfolio" target="_blank">Kev</a></div>
+            </footer>
+        </main>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -324,6 +341,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/bd15b8c56e.js" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $(".loader-container").fadeOut(1000);
+            $(".global-container").fadeIn(1000);
+        });
+    </script>
 
 </body>
 
