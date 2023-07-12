@@ -3,7 +3,7 @@
   src: url("../fonts/Montserrat.ttf") format("truetype");
 }
 * {
-  font-family: "Montserrat Kev";
+  font-family: "Montserrat Kev" !important;
   user-select: none;
 }
 html,
@@ -15,7 +15,9 @@ body,
 main {
   overflow-x: hidden;
 }
-label, input::placeholder, textarea::placeholder{
+label,
+input::placeholder,
+textarea::placeholder {
   font-size: 13px !important;
 }
 .btn {
@@ -375,6 +377,21 @@ footer div {
 footer div i {
   color: #2127c8;
 }
+.loader-container {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color:#ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar {
+  z-index: 999 !important;
+
+}
 .loader {
   transform: rotateZ(45deg);
   perspective: 1000px;
@@ -383,29 +400,29 @@ footer div i {
   height: 48px;
   color: #fff;
 }
-  .loader:before,
-  .loader:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height: inherit;
-    border-radius: 50%;
-    transform: rotateX(70deg);
-    animation: 1s spin linear infinite;
-  }
-  .loader:after {
-    color: #2127c8;
-    transform: rotateY(70deg);
-    animation-delay: .4s;
-  }
-  .loader:before {
-    color: #1e5db7;
-    transform: rotateY(70deg);
-    animation-delay: .4s;
-  }
+.loader:before,
+.loader:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
+.loader:after {
+  color: #2127c8;
+  transform: rotateY(70deg);
+  animation-delay: 0.4s;
+}
+.loader:before {
+  color: #1e5db7;
+  transform: rotateY(70deg);
+  animation-delay: 0.4s;
+}
 
 @keyframes rotate {
   0% {
@@ -428,31 +445,30 @@ footer div i {
 @keyframes spin {
   0%,
   100% {
-    box-shadow: .2em 0px 0 0px currentcolor;
+    box-shadow: 0.2em 0px 0 0px currentcolor;
   }
   12% {
-    box-shadow: .2em .2em 0 0 currentcolor;
+    box-shadow: 0.2em 0.2em 0 0 currentcolor;
   }
   25% {
-    box-shadow: 0 .2em 0 0px currentcolor;
+    box-shadow: 0 0.2em 0 0px currentcolor;
   }
   37% {
-    box-shadow: -.2em .2em 0 0 currentcolor;
+    box-shadow: -0.2em 0.2em 0 0 currentcolor;
   }
   50% {
-    box-shadow: -.2em 0 0 0 currentcolor;
+    box-shadow: -0.2em 0 0 0 currentcolor;
   }
   62% {
-    box-shadow: -.2em -.2em 0 0 currentcolor;
+    box-shadow: -0.2em -0.2em 0 0 currentcolor;
   }
   75% {
-    box-shadow: 0px -.2em 0 0 currentcolor;
+    box-shadow: 0px -0.2em 0 0 currentcolor;
   }
   87% {
-    box-shadow: .2em -.2em 0 0 currentcolor;
+    box-shadow: 0.2em -0.2em 0 0 currentcolor;
   }
 }
-
 
 @media screen and (min-width: 600px) {
   .btn {
@@ -526,9 +542,9 @@ footer div i {
   }
   .sections #services p.lead,
   .sections #contact p.lead {
-width: 55%;
-margin-left: 50%;
-transform: translateX(-50%);
-text-align: center;
+    width: 55%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
   }
 }
