@@ -419,8 +419,8 @@ footer div i {
   animation-delay: 0.4s;
 }
 .loader:before {
-  color: #1e5db7;
-  transform: rotateY(70deg);
+  color: #2127c8;
+  transform: rotate(0, 70deg, -135deg);
   animation-delay: 0.4s;
 }
 
