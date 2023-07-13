@@ -3,7 +3,7 @@
   src: url("../fonts/Montserrat.ttf") format("truetype");
 }
 * {
-  font-family: "Montserrat Kev" !important;
+  font-family: "Montserrat Kev";
   user-select: none;
 }
 html,
