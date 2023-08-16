@@ -267,9 +267,9 @@ formulaire.addEventListener("submit", (e) => {
     Message : ${message.value}
     `);
     let url =
-      "https://api.callmebot.com/whatsapp.php?phone=+22565100029&text=" +
+      "https://api.callmebot.com/whatsapp.php?phone=+22549674067&text=" +
       messageToSend +
-      "&apikey=9252314";
+      "&apikey=9668095";
 
     fetch(url)
       .then((response) => {
